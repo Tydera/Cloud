@@ -1,0 +1,35 @@
+# DigitalOcean Configuration
+do_token = "your-digitalocean-api-token-here"
+
+# Project Configuration
+project_name = "finnaslaim"
+environment  = "production"
+region       = "nyc3"
+
+# Network Configuration
+vpc_cidr = "10.10.0.0/16"
+
+# Droplet Configuration
+app_droplet_size  = "s-2vcpu-4gb"
+app_droplet_count = 2
+
+# Database Configuration
+db_size    = "db-s-2vcpu-4gb"
+db_engine  = "pg"
+db_version = "15"
+
+# SSH Configuration
+ssh_key_name = "finnaslaim-ssh-key"
+
+# Monitoring
+alert_email = "admin@finnaslaim.com"
+
+# Domain (optional)
+domain_name = ""  # e.g., "finnaslaim.com"
+
+# Feature Flags
+enable_monitoring = true
+enable_backups    = true
+
+# Application
+docker_image = "finnaslaim/app:latest"
